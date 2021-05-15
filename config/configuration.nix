@@ -6,7 +6,8 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
@@ -48,7 +49,7 @@
       layout = "us";
       xkbOptions = "eurosign:3";
 
-      videoDrivers = ["nvidia"];
+      videoDrivers = [ "nvidia" ];
 
       # Enable lightdm
       displayManager.lightdm.enable = true;
@@ -61,7 +62,7 @@
   # services.xserver.windowManager.default = "i3";
   # services.xserver.windowManager.i3.enable = true;
   # services.xserver.videoDrivers = ["nvidia"];
-	
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
@@ -84,7 +85,7 @@
   #   wget vim
   #   firefox
   # ];
-  
+
   # Allow unfree licenses
   nixpkgs.config.allowUnfree = true;
 
@@ -116,4 +117,3 @@
   system.stateVersion = "20.09"; # Did you read the comment?
 
 }
-

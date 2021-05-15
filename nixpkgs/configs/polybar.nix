@@ -14,7 +14,7 @@
     config = {
       "bar/bottom" = {
         bottom = true;
-        fixed-center = true;	
+        fixed-center = true;
       };
     };
   };

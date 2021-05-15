@@ -7,17 +7,17 @@
 
     config = rec {
       modifier = "Mod4"; # Windows Key
-      
+
       window.border = 0;
 
       gaps = {
-       inner = 16;
-       outer = 4;
+        inner = 16;
+        outer = 4;
       };
 
       keybindings = lib.mkOptionDefault {
         "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
-	"${modifier}+space" = "exec ${pkgs.rofi}/bin/rofi -modi drun -show drun";
+        "${modifier}+space" = "exec ${pkgs.rofi}/bin/rofi -modi drun -show drun";
       };
 
       startup = [
