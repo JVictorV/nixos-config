@@ -9,6 +9,7 @@
     docker
     jetbrains.webstorm
     android-studio
+    neovim
 
     # Bins
     firefox-devedition-bin
