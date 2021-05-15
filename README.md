@@ -1,6 +1,6 @@
 # My NixOS config
 
-That repo contains my nixos config based on [home-manager](https://github.com/nixos-community/homenager)
+That repo contains my nixos config based on [home-manager](https://github.com/nix-community/home-manager)
 
 ``config`` folder goes to ``/etc/config`` and ``nixpkgs`` folder goes to ``~/.config/nixpkgs``
 
