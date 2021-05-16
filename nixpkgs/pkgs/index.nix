@@ -13,6 +13,10 @@
     jetbrains.webstorm
     android-studio
     neovim
+    vscode
+
+    # Apps
+    spotify
 
     # Bins
     firefox-devedition-bin
