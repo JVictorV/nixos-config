@@ -7,6 +7,7 @@
 
     config = rec {
       modifier = "Mod4"; # Windows Key
+      bars = [ ];
 
       window.border = 0;
 

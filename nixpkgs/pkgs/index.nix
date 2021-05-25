@@ -4,9 +4,17 @@
   home.packages = with pkgs; [
     # System
     nixpkgs-fmt
+    xorg.xdpyinfo
+    neofetch
+    gotop
+    htop
+    i3status-rust
 
     # Tools
     ffmpeg
+    zip
+    unrar
+    unzip
 
     # Work
     docker
@@ -14,6 +22,7 @@
     android-studio
     neovim
     vscode
+    rustup
 
     # Apps
     spotify

@@ -9,13 +9,21 @@
     [
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./fonts.nix
     ];
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub.device = "/dev/disk/by-uuid/A4FA-8539";
-  boot.loader.grub.useOSProber = true;
+  boot = {
+    cleanTmpDir = true;
+    loader = {
+      # Use the systemd-boot EFI boot loader.
+      systemd-boot.enable = true;
+
+      efi.canTouchEfiVariables = true;
+
+      grub.device = "/dev/disk/by-uuid/A4FA-8539";
+      grub.useOSProber = true;
+    };
+  };
 
   # networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -45,6 +53,9 @@
       # Enable X11
       enable = true;
 
+      # My current DPI is 96, might change if i get a new monitor
+      dpi = 96;
+
       # Keyboard
       layout = "us";
       xkbOptions = "eurosign:3";
@@ -56,12 +67,6 @@
       desktopManager.xterm.enable = true;
     };
   };
-
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
-  # services.xserver.windowManager.default = "i3";
-  # services.xserver.windowManager.i3.enable = true;
-  # services.xserver.videoDrivers = ["nvidia"];
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;

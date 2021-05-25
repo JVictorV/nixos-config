@@ -20,11 +20,6 @@
   home.username = "joao";
   home.homeDirectory = "/home/joao";
 
-  home.packages = [
-    pkgs.htop
-    pkgs.fortune
-  ];
-
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
