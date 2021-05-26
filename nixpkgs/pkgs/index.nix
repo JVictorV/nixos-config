@@ -8,7 +8,7 @@
     neofetch
     gotop
     htop
-    i3status-rust
+    feh
 
     # Tools
     ffmpeg

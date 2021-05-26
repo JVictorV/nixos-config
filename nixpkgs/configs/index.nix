@@ -5,5 +5,6 @@
     ./alacritty.nix
     ./i3.nix
     ./rofi.nix
+    ./polybar.nix
   ];
 }

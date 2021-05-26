@@ -9,11 +9,11 @@
       modifier = "Mod4"; # Windows Key
       bars = [ ];
 
-      window.border = 0;
+      window.border = 1;
 
       gaps = {
         inner = 16;
-        outer = 4;
+        outer = 0;
       };
 
       keybindings = lib.mkOptionDefault {
@@ -29,6 +29,11 @@
         }
         {
           command = "systemctl --user restart polybar.service";
+          always = true;
+          notification = false;
+        }
+        {
+          command = "${pkgs.feh}/bin/feh --bg-scale ~/background.jpg";
           always = true;
           notification = false;
         }
