@@ -17,12 +17,12 @@
     unzip
 
     # Work
-    docker
     jetbrains.webstorm
     android-studio
     neovim
     vscode
     rustup
+    gh
 
     # Apps
     spotify
