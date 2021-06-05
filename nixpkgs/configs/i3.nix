@@ -1,6 +1,23 @@
-{ pkgs, lib, ... }:
+{ config, pkgs, lib, ... }:
 
-{
+with lib;
+let
+  startPolybar = pkgs.writeShellScript "startPolybar" ''
+    pkill -f polybar
+
+    if type "xrandr"; then
+      for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+        MONITOR=$m polybar --reload top &
+        echo "starting top bar for $m" | systemd-cat &
+        MONITOR=$m polybar --reload bottom &
+        echo "starting bottom bar for $m" | systemd-cat &
+      done
+    else
+      polybar --reload top &
+      polybar --reload bottom &
+    fi
+  '';
+in {
   xsession.windowManager.i3 = {
     enable = true;
     package = pkgs.i3-gaps;
@@ -28,8 +45,7 @@
           notification = false;
         }
         {
-          command = "systemctl --user restart polybar.service";
-          always = true;
+          command = "${startPolybar}";
           notification = false;
         }
         {

@@ -3,9 +3,7 @@
 let
   bg = "#FAFAFA";
   fg = "#231F20";
-
   urgency = "#e74c3c";
-
 in
 {
   services.polybar = {
