@@ -34,6 +34,8 @@ in
         outer = 0;
       };
 
+      focus.followMouse = false;
+
       keybindings = lib.mkOptionDefault {
         "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
         "${modifier}+space" = "exec ${pkgs.rofi}/bin/rofi -modi drun -show drun";
