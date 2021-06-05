@@ -17,7 +17,8 @@ let
       polybar --reload bottom &
     fi
   '';
-in {
+in
+{
   xsession.windowManager.i3 = {
     enable = true;
     package = pkgs.i3-gaps;
