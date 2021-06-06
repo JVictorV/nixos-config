@@ -5,6 +5,7 @@
     mutableUsers = false;
 
     users.joao = {
+      description = "JVictorV";
       isNormalUser = true;
       home = "/home/joao";
       extraGroups = [
