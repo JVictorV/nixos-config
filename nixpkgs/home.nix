@@ -9,12 +9,6 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  programs.git = {
-    enable = true;
-    userName = "JVictorV";
-    userEmail = "joaovictorvisona@gmail.com";
-  };
-
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "joao";
