@@ -9,6 +9,7 @@
     gotop
     htop
     feh
+    mkpasswd
 
     # Tools
     ffmpeg
