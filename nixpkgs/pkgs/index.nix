@@ -29,7 +29,7 @@
     spotify
 
     # Bins
-    firefox-devedition-bin
+    brave
 
     # Communication
     discord-canary
