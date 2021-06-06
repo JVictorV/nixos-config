@@ -10,6 +10,8 @@
     htop
     feh
     mkpasswd
+    gnupg
+    os-prober
 
     # Tools
     ffmpeg
