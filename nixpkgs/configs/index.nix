@@ -2,11 +2,12 @@
 
 {
   imports = [
+    ./alacritty.nix
+    ./gh.nix
     ./git.nix
     ./gpg.nix
-    ./alacritty.nix
     ./i3.nix
-    ./rofi.nix
     ./polybar.nix
+    ./rofi.nix
   ];
 }
