@@ -2,9 +2,9 @@
 
 let
   bg = "#FAFAFA";
-  fg = "#575F66";
+  fg = "#231F20";
 
-  black = "#575F66";
+  black = "#231F20";
   red = "#F07171";
   green = "#86B300";
   yellow = "#F2AE49";
