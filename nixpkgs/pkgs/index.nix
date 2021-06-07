@@ -18,6 +18,7 @@
     zip
     unrar
     unzip
+    bat
 
     # Work
     jetbrains.webstorm
@@ -25,7 +26,6 @@
     neovim
     vscode
     rustup
-    gh
 
     # Apps
     spotify
@@ -35,5 +35,6 @@
 
     # Communication
     discord-canary
+    tdesktop
   ];
 }
