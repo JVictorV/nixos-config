@@ -4,6 +4,8 @@ That repo contains my nixos config based on [home-manager](https://github.com/ni
 
 ``config`` folder goes to ``/etc/config`` and ``nixpkgs`` folder goes to ``~/.config/nixpkgs``
 
+The ``templates`` folder contains some examples on how to use nix shells for custom environments, mostly for development
+
 
 ## 1 - Installation
 
