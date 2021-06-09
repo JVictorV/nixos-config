@@ -12,6 +12,7 @@
     mkpasswd
     gnupg
     os-prober
+    xclip
 
     # Tools
     ffmpeg
@@ -19,6 +20,7 @@
     unrar
     unzip
     bat
+    google-cloud-sdk
 
     # Work
     jetbrains.webstorm
@@ -26,6 +28,7 @@
     neovim
     vscode
     rustup
+    libreoffice
 
     # Apps
     spotify
