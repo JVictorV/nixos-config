@@ -67,7 +67,7 @@
 
       # Enable lightdm
       displayManager.lightdm.enable = true;
-      desktopManager.xterm.enable = true;
+      desktopManager.gnome.enable = true;
     };
   };
 
