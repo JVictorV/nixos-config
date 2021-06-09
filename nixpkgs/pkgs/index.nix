@@ -12,7 +12,7 @@
     mkpasswd
     gnupg
     os-prober
-    xclip
+    epiphany
 
     # Tools
     ffmpeg
@@ -20,7 +20,9 @@
     unrar
     unzip
     bat
-    google-cloud-sdk
+    xclip
+    docker-compose
+    openssl
 
     # Work
     jetbrains.webstorm
@@ -28,12 +30,12 @@
     neovim
     vscode
     rustup
-    libreoffice
+    google-cloud-sdk
+    gitkraken
 
     # Apps
     spotify
-
-    # Bins
+    libreoffice
     brave
 
     # Communication
