@@ -32,6 +32,7 @@
     rustup
     google-cloud-sdk
     gitkraken
+    nodePackages.node2nix
 
     # Apps
     spotify
