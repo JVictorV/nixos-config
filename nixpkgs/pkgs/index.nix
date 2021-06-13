@@ -38,6 +38,7 @@
     spotify
     libreoffice
     brave
+    obs-studio
 
     # Communication
     discord-canary
