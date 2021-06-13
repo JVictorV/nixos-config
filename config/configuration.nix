@@ -16,13 +16,14 @@
   boot = {
     cleanTmpDir = true;
     loader = {
-      # Use the systemd-boot EFI boot loader.
-      systemd-boot.enable = true;
-
       efi.canTouchEfiVariables = true;
 
-      grub.device = "/dev/disk/by-uuid/A4FA-8539";
-      grub.useOSProber = true;
+      grub = {
+        enable = true;
+        devices = [ "nodev" ];
+        efiSupport = true;
+        useOSProber = true;
+      };
     };
   };
 
