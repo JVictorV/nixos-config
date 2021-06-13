@@ -68,7 +68,7 @@
 
       # Enable lightdm
       displayManager.lightdm.enable = true;
-      desktopManager.gnome.enable = true;
+      desktopManager.gnome3.enable = true;
     };
   };
 
