@@ -13,6 +13,7 @@
     gnupg
     os-prober
     epiphany
+    jdk
 
     # Tools
     ffmpeg
@@ -39,6 +40,7 @@
     libreoffice
     brave
     obs-studio
+    multimc
 
     # Communication
     discord-canary
