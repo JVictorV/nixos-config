@@ -34,6 +34,7 @@
     google-cloud-sdk
     gitkraken
     nodePackages.node2nix
+    emacs
 
     # Apps
     spotify
