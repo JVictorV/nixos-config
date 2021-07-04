@@ -24,10 +24,11 @@
     xclip
     docker-compose
     openssl
+    youtube-dl
     droidcam
     v4l-utils
     any-nix-shell
-
+    
     # Work
     jetbrains.webstorm
     android-studio
@@ -40,9 +41,9 @@
     emacs
 
     # Apps
-    spotify
     libreoffice
     brave
+    google-chrome
     obs-studio
     multimc
 
