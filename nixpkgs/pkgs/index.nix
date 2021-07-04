@@ -24,6 +24,8 @@
     xclip
     docker-compose
     openssl
+    droidcam
+    v4l-utils
     any-nix-shell
 
     # Work
