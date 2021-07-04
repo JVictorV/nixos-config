@@ -3,6 +3,7 @@
 {
   imports = [
     ./alacritty.nix
+    ./fish.nix
     ./gh.nix
     ./git.nix
     ./gpg.nix

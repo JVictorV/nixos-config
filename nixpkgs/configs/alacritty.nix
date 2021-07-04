@@ -16,6 +16,7 @@ in
 {
   programs.alacritty = {
     enable = true;
+
     settings = {
       font = {
         normal = {
@@ -24,6 +25,7 @@ in
         };
         size = 14.0;
       };
+
       colors = {
         primary = {
           background = bg;
@@ -40,6 +42,10 @@ in
           cyan = cyan;
           white = white;
         };
+      };
+
+      shell = {
+        program = "fish";
       };
     };
   };

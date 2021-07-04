@@ -24,6 +24,7 @@
     xclip
     docker-compose
     openssl
+    any-nix-shell
 
     # Work
     jetbrains.webstorm
