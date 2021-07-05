@@ -28,6 +28,7 @@
     droidcam
     v4l-utils
     any-nix-shell
+    escrotum
     
     # Work
     jetbrains.webstorm
