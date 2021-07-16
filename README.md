@@ -14,3 +14,13 @@ The ``templates`` folder contains some examples on how to use nix shells for cus
 ## 2 - LICENSE
 
 WTFPL
+
+## 3 - Tips and Tricks
+
+### Q: How to get the sha256 hash of a repo?
+
+A: nix-prefetch-url --unpack https://github.com/${owner}/${repo}/archive/${rev}.tar.gz
+
+### Q: Webstorm shows an error when opening a terminal inside a nix shell:
+
+A: Go to Settings -> Terminal and disable ``Shell Integration``
