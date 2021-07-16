@@ -1,18 +1,5 @@
 { pkgs, ... }:
 
-let
-  bg = "#FAFAFA";
-  fg = "#231F20";
-
-  black = "#231F20";
-  red = "#F07171";
-  green = "#86B300";
-  yellow = "#F2AE49";
-  blue = "#399EE6";
-  magenta = "#A37ACC";
-  cyan = "#4CBF99";
-  white = "#FAFAFA";
-in
 {
   programs.alacritty = {
     enable = true;
@@ -28,19 +15,40 @@ in
 
       colors = {
         primary = {
-          background = bg;
-          foreground = fg;
+          background = "#e8e9ec";
+          foreground = "#33374c";
+        };
+
+        cursor = {
+          text = "#e8e9ec";
+          cursor = "#33374c";
         };
 
         normal = {
-          black = black;
-          red = red;
-          green = green;
-          yellow = yellow;
-          blue = blue;
-          magenta = magenta;
-          cyan = cyan;
-          white = white;
+          black = "#dcdfe7";
+          red = "#cc517a";
+          green = "#668e3d";
+          yellow = "#c57339";
+          blue = "#2d539e";
+          magenta = "#7759b4";
+          cyan = "#3f83a6";
+          white = "#33374c";
+        };
+
+        bright = {
+          black = "#8389a3";
+          red = "#cc3768";
+          green = "#598030";
+          yellow = "#b6662d";
+          blue = "#22478e";
+          magenta = "#6845ad";
+          cyan = "#327698";
+          white = "#262a3f";
+        };
+
+        selection = {
+          background = "#33374c";
+          text = "#e8e9ec";
         };
       };
 
