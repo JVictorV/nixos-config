@@ -57,6 +57,12 @@ in
           always = true;
           notification = false;
         }
+        {
+          # Fix for my weird keyboard layout
+          command = "setxkbmap -option altwin:swap_alt_win";
+          always = true;
+          notification = false;
+        }
       ];
     };
   };
