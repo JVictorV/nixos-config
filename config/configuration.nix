@@ -83,6 +83,12 @@
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  hardware.opengl.driSupport32Bit = true;
+
+  # Enable bluethoot.
+  hardware.bluetooth = {
+    enable = true;
+  };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
