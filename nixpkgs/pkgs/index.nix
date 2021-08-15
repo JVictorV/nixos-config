@@ -1,4 +1,5 @@
-{ pkgs, ... }:
+{ pkgs, environment, ... }:
+
 
 {
   home.packages = with pkgs; [
@@ -25,7 +26,6 @@
     docker-compose
     openssl
     youtube-dl
-    droidcam
     v4l-utils
     any-nix-shell
     escrotum
@@ -49,6 +49,7 @@
     firefox-devedition-bin
     obs-studio
     multimc
+    guvcview
 
     # Communication
     discord-canary
