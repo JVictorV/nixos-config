@@ -75,6 +75,7 @@
       displayManager.lightdm.enable = true;
       desktopManager.gnome3.enable = true;
     };
+    ratbagd.enable = true;
   };
 
   # Enable CUPS to print documents.

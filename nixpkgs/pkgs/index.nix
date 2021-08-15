@@ -29,6 +29,7 @@
     v4l-utils
     any-nix-shell
     escrotum
+    piper
     
     # Work
     jetbrains.webstorm
