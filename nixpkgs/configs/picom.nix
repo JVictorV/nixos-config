@@ -14,6 +14,7 @@
       "100:class_g = 'Alacritty' && focused"
       "70:class_g = 'Alacritty' && !focused"
       "100:class_g *?= 'Rofi'"
+      "100:class_g *?= 'Firefox'"
       "100:class_g = 'Brave-browser' && focused"
       "100:class_g = 'Brave-browser' && !focused"
       "100:name *= 'Guvcview'"

@@ -45,6 +45,7 @@
     libreoffice
     brave
     google-chrome
+    firefox-devedition-bin
     obs-studio
     multimc
 
