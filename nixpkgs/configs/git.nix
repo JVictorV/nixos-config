@@ -9,5 +9,10 @@
       key = "944BEF702E6490B8";
       signByDefault = true;
     };
+    extraConfig = {
+      init = {
+        defaultBranch = "main";
+      };
+    };
   };
 }
