@@ -55,7 +55,7 @@ in
       "bar/bottom" = {
         monitor = "\$\{env:MONITOR:\}";
         bottom = true;
-        fixed-center = true;
+        fixed-center = false;
 
         width = "100%";
         height = 20;
@@ -69,9 +69,7 @@ in
 
         tray-position = "left";
         tray-detached = false;
-        tray-maxsize = 15;
-        tray-offset-x = -20;
-        tray-offset-y = 0;
+        tray-offset-x = "-1%";
         tray-padding = 5;
         tray-scale = 1;
         padding = 0;
