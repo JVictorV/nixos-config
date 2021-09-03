@@ -35,7 +35,6 @@
     jetbrains.webstorm
     android-studio
     neovim
-    vscode
     rustup
     google-cloud-sdk
     gitkraken

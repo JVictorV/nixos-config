@@ -11,5 +11,6 @@
     ./picom.nix
     ./polybar.nix
     ./rofi.nix
+    ./vscode.nix
   ];
 }
