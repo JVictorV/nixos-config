@@ -49,6 +49,8 @@
     obs-studio
     multimc
     guvcview
+    bitwarden
+    bitwarden-cli
 
     # Communication
     discord-canary
