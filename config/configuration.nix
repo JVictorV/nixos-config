@@ -76,6 +76,7 @@
       desktopManager.gnome3.enable = true;
     };
     ratbagd.enable = true;
+    flatpak.enable = true;
   };
 
   # Enable CUPS to print documents.
