@@ -20,16 +20,19 @@
 
       grub = {
         enable = true;
-        devices = [ "nodev" ];
+        device = "nodev";
         efiSupport = true;
         useOSProber = true;
       };
     };
+    kernelPackages = pkgs.linuxPackages_5_14;
     extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
     kernelModules = [ "v4l2loopback" ];
     extraModprobeConfig = ''
       options v4l2loopback exclusive_caps=1
     '';
+
+    initrd.kernelModules = [ "amdgpu" ];
   };
 
   virtualisation.docker.enable = true;
@@ -69,7 +72,7 @@
       layout = "us";
       xkbOptions = "eurosign:3";
 
-      videoDrivers = [ "nvidia" ];
+      videoDrivers = [ "amdgpu" ];
 
       # Enable lightdm
       displayManager.lightdm.enable = true;
