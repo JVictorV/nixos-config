@@ -68,6 +68,21 @@ in
         }
       ];
     };
+
+    # TODO Remove once new workspaceOutputStr is merged
+    extraConfig = ''
+      workspace 1 output ${secondaryMonitor}
+      workspace 3 output ${secondaryMonitor}
+      workspace 5 output ${secondaryMonitor}
+      workspace 7 output ${secondaryMonitor}
+      workspace 9 output ${secondaryMonitor}
+
+      workspace 2 output ${primaryMonitor}
+      workspace 4 output ${primaryMonitor}
+      workspace 6 output ${primaryMonitor}
+      workspace 8 output ${primaryMonitor}
+      workspace 10 output ${primaryMonitor}
+    '';
   };
 
   xsession.enable = true;
