@@ -17,6 +17,9 @@ let
       polybar --reload bottom &
     fi
   '';
+
+  primaryMonitor = "DisplayPort-2";
+  secondaryMonitor = "HDMI-A-0";
 in
 {
   xsession.windowManager.i3 = {
@@ -44,7 +47,7 @@ in
 
       startup = [
         {
-          command = "xrandr --output HDMI-0 --left-of DP-0";
+          command = "xrandr --output ${primaryMonitor} --primary --mode 3440x1440 --rate 144.00 --output ${secondaryMonitor} --mode 2560x1080 --rate 74.99 --left-of ${primaryMonitor}";
           always = true;
           notification = false;
         }
