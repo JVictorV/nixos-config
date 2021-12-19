@@ -10,7 +10,7 @@
     ./i3.nix
     ./nix-direnv.nix
     ./picom.nix
-    ./polybar.nix
+    ./polybar
     ./rofi.nix
     ./vscode.nix
   ];

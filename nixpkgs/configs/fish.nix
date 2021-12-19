@@ -3,7 +3,7 @@
 {
   programs.fish = {
     enable = true;
-    promptInit = ''
+    interactiveShellInit = ''
       any-nix-shell fish --info-right | source
     '';
 
