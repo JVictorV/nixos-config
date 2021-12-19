@@ -28,7 +28,7 @@
     youtube-dl
     v4l-utils
     any-nix-shell
-    escrotum
+    flameshot
     piper
     
     # Work

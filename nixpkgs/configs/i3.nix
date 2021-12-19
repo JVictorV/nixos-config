@@ -42,7 +42,7 @@ in
       keybindings = lib.mkOptionDefault {
         "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
         "${modifier}+space" = "exec ${pkgs.rofi}/bin/rofi -modi drun -show drun";
-        "${modifier}+y" = "exec ${pkgs.escrotum}/bin/escrotum -s -C";
+        "${modifier}+y" = "exec ${pkgs.flameshot}/bin/flameshot gui";
       };
 
       startup = [
