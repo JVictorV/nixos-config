@@ -20,6 +20,8 @@ let
 
   primaryMonitor = "DisplayPort-2";
   secondaryMonitor = "HDMI-A-0";
+
+  execOnMonitor = params: ''i3-msg "workspace ${toString params.ws}, move workspace to output ${toString params.monitor}; exec ${toString params.exec}"'';
 in
 {
   xsession.windowManager.i3 = {
