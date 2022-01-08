@@ -25,7 +25,7 @@
         useOSProber = true;
       };
     };
-    kernelPackages = pkgs.linuxPackages_5_14;
+    kernelPackages = pkgs.linuxKernel.packages.linux_5_15;
     extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
     kernelModules = [ "v4l2loopback" ];
     extraModprobeConfig = ''
