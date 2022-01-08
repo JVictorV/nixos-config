@@ -11,7 +11,7 @@
     ./nix-direnv.nix
     ./picom.nix
     ./polybar
-    ./rofi.nix
+    ./rofi
     ./vscode.nix
   ];
 }
