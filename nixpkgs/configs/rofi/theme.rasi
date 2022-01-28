@@ -55,7 +55,6 @@ element {
 element selected {
     background-color: @fg;
     text-color: @bg;
-    f
 }
 
 listview {
