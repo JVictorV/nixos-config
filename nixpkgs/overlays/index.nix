@@ -7,10 +7,12 @@ self: super: {
     src = builtins.fetchTarball
       "https://github.com/dylanaraps/neofetch/archive/master.tar.gz";
   });
-  gitkraken = super.gitkraken.overrideAttrs (oldAttrs: {
-    src = self.fetchzip {
-      url = "https://release.axocdn.com/linux/GitKraken-v8.0.1.tar.gz";
-      sha256 = "1n88m41424qwsfp2hy58piqpv2dk6i74hcj184aq6njllvnsznnq";
-    };
-  });
+  jetbrains = super.jetbrains // {
+    webstorm = super.jetbrains.webstorm.overrideAttrs (oldAttrs: {
+      src = self.fetchzip {
+        url = "https://download.jetbrains.com/webstorm/WebStorm-2022.1.tar.gz";
+        sha256 = "1wyjc6hb8k4ynlm147bs2wha0q9jhwm2a7v7az5cygxyyyr9rd10";
+      };
+    });
+  };
 }
