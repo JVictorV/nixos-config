@@ -23,3 +23,12 @@ A: nix-prefetch-url --unpack https://github.com/${owner}/${repo}/archive/${rev}.
 ### Q: Webstorm shows an error when opening a terminal inside a nix shell:
 
 A: Go to Settings -> Terminal and disable `Shell Integration`
+
+### Q: Im running out of space on my disk wtf why?:
+
+A:
+```nix
+sudo nix-collect-garbage -d
+
+sudo nixos-rebuild switch
+```

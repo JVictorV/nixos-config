@@ -70,7 +70,7 @@
 
       # Keyboard
       layout = "us";
-      xkbOptions = "eurosign:3";
+      xkbVariant = "altgr-intl";
 
       videoDrivers = [ "amdgpu" ];
 
