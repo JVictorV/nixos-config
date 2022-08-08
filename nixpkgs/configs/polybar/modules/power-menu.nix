@@ -20,6 +20,7 @@ in
 
     menu = [
       [
+        { text = " Lock"; exec = "dm-tool lock"; }
         { text = " Suspend"; exec = "suspend"; }
         { text = " Reboot"; exec = "reboot"; }
         { text = " Shutdown"; exec = "poweroff"; }
